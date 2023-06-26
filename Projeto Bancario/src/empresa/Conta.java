@@ -35,12 +35,6 @@ public class Conta {
 		return true;
 	}
 	
-	boolean destino(int valor) {
-		if(numero == valor ) {
-			return false;
-		}
-		return true;
-	}
 	
 	boolean transferenciaSaida(double valor) {
 		if(saldo <= valor && limite >= valor) {

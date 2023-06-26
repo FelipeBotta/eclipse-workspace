@@ -18,10 +18,6 @@ public class Principal {
 			System.out.println("Problema no Deposito, Verifique os Dados!");
 		}
 		
-		if(!c1.destino(222)) {
-			System.out.println("Problema na Transferencia");
-			
-		}
 		
 		if(!c1.transferenciaSaida(10)) {
 			System.out.println("Problema na Transferencia");

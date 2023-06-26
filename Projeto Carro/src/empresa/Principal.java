@@ -7,7 +7,6 @@ public class Principal {
 		Carro c = new Carro();
 		
 		
-		System.out.println(Carro.Pi);
 		System.out.println(Carro.milhasParaMetros(10));
 	}
 

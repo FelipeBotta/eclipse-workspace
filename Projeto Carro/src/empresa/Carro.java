@@ -5,7 +5,7 @@ public class Carro {
 	String modelo;
 	float velocidade;
 	
-	static double Pi = 3.1415; 
+	static final double PI = 3.1415; 
 	
 	
 	static float milhasParaMetros (float milhas) {

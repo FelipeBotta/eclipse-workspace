@@ -1,0 +1,14 @@
+package empresa;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		int idade = 10;
+		
+		idade = idade + 2;
+		
+		System.out.println(idade);
+	}
+
+}

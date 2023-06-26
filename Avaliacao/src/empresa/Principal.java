@@ -4,19 +4,12 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Avaliacao luis = new Avaliacao(7,8,9);
+		Aluno a1 = new Aluno("Luis","Eletricista",new Avaliacao(9,10,3));
+		Aluno a2 = new Aluno("Felipe","Mecanico",new Avaliacao(7,8,4));
 		
-		Avaliacao felipe = new Avaliacao();
-			felipe.n1 = 7;
-			felipe.n2 = 8;
-			felipe.n3 = 7 ;
-		
-		
-		System.out.println("Media Aritmetica do Luis: " + luis.mediaAritmetica());
-		System.out.println("Media Ponderada do Luis: " + luis.mediaPonderada());
-		
-		System.out.println("Media Aritmetica do Felipe: " + felipe.mediaAritmetica());
-		System.out.println("Media Ponderada do Felipe: " + felipe.mediaPonderada());
+		a1.info();
+		a2.info();
+
 	}
 
 }

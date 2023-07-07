@@ -3,8 +3,12 @@ package empresa;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Horario aula = new Horario();
+		
+		aula.setHora(40);
+		aula.minuto = 30;
+		aula.segundo = 0;
+		
 	}
 
 }

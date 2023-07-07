@@ -11,7 +11,7 @@ public class Aluno {
 	}
 	
 	
-	Aluno(int Matricula, String Nome, String Cpf){
+	public Aluno(int Matricula, String Nome, String Cpf){
 		this.matricula = Matricula;
 		this.nome = Nome;
 		this.cpf = Cpf;
@@ -24,7 +24,7 @@ public class Aluno {
 	}
 
 
-	void info() {
+	public void info() {
 		System.out.println("Matricula: " + matricula);
 		System.out.println("Nome: " + nome);
 		System.out.println("CPF: " + cpf);

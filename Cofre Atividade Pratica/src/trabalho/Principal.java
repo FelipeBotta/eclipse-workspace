@@ -6,7 +6,9 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
+		Cofrinho cofrinho = new Cofrinho();
+		
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("COFRINHO: \n"
 				+ "1 - Adicionar Moeda \n"
@@ -14,7 +16,59 @@ public class Principal {
 				+ "3 - Listar Moedas \n"
 				+ "4 - Calcular total convertido para Real \n"
 				+ "0 - Encerrar \n");
-
+		
+		int indice = sc.nextInt();
+		
+		if (indice == 1){
+			
+			System.out.println("Digite a moeda: \n 1 - Euro \n 2 - Dolar \n 3 - Real");
+			
+		int sub  = sc.nextInt();
+		switch (sub) {
+		case 1:
+			
+			System.out.println("Digite o valor: ");
+			
+			double valor = sc.nextDouble();
+			
+			Euro euro = new Euro(valor);
+			
+			cofrinho.adicionar(euro);
+			
+			break;
+		
+		case 2:
+			
+			System.out.println("Digite o valor: ");
+			
+			double valor1 = sc.nextDouble();
+			
+			Dolar dolar = new Dolar(valor1);
+			
+			cofrinho.adicionar(dolar);
+			
+			break;
+			
+		case 3:
+			
+			System.out.println("Digite o valor: ");
+			
+			double valor2 = sc.nextDouble();
+			
+			Real real = new Real(valor2);
+			
+			cofrinho.adicionar(real);
+			
+			break;
+		
+		default:
+			
+			System.out.println("Digite uma opção valida");
+			
+			
+		}
+		
+		}
 	}
 
 }

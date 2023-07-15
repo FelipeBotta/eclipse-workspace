@@ -6,6 +6,9 @@ public class Cofrinho {
 	
 	double total ;
 	
+	public Cofrinho() {
+	}
+	
 	private ArrayList <Moeda> listaMoeda = new ArrayList <Moeda>();
 	
 	public void adicionar(Moeda moeda) {

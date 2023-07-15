@@ -44,5 +44,8 @@ public class Cofrinho {
 			
 		});
 		
+		System.out.println("O total convertido em reais é de: " + total);
+		
+		
 	}
 }

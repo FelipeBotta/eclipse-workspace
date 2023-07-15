@@ -13,11 +13,11 @@ public class Dolar extends Moeda {
 	}
 	
 	@Override
-	public void converter(){
+	public double converter(){
 		
-		valor = this.valor / 5.8;
-		System.out.println(valor);
+		valor = this.valor / 4.8;
 		
+		return valor;
 	}
 
 }

@@ -14,7 +14,8 @@ public abstract class Moeda {
 
 	}
 	
-	public void converter(){
+	public double converter(){
+		return 0;
 		
 	}
 

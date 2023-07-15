@@ -13,10 +13,9 @@ public class Real extends Moeda {
 	}
 	
 	@Override
-	public void converter(){
+	public double converter(){
 		
-		System.out.println(valor);
-		
+		return valor;
 	}
 
 }

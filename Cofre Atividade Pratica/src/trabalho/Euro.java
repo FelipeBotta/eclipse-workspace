@@ -15,19 +15,9 @@ public class Euro extends Moeda {
 	@Override
 	public double converter(){
 		
-		valor = this.valor / 5.4;
+		double euro = this.valor / 5.4;
 		
-		return valor;
-	}
-	
-	@Override
-	public boolean equals(Object obj) {
-		return super.equals(obj);
-	}
-
-	@Override
-	public int hashCode() {
-		return super.hashCode();
+		return euro;
 	}
 	
 	

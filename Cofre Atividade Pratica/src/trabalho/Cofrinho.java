@@ -17,18 +17,20 @@ public class Cofrinho {
 	}
 	
 	public void remover(Moeda moeda) {
-		
-		//listaMoeda.forEach((n) -> {if (moeda.valor == n.valor && moeda.info() == n.info())
-		//{listaMoeda.remove(n);}});
-		
+			
 		listaMoeda.remove(moeda);
 		
 	}
 	
 	public void listagemMoedas() {
 		
+		if(listaMoeda.isEmpty()) {
+			System.out.println("Cofre Vazio ! \n");
+		}
+		
 		listaMoeda.forEach((n)-> {System.out.println(n.info() + " - " + String.format("%.2f", n.valor));});
-	
+		
+		
 }
 	public void totalConvertido(){
 		
@@ -36,18 +38,9 @@ public class Cofrinho {
 		
 		listaMoeda.forEach((n) -> {
 			
-			if (n.info() == "Real"){
-					total =+ n.valor;
+							
 				
-			} else if (n.info() == "Dolar") { 
-				 	
-				total =+ n.converter();
-				
-			}else if (n.info() == "Euro"){				
-				
-				total =+ n.converter();
-				
-			}
+				total += n.converter();
 			
 		});
 		

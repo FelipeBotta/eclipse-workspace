@@ -15,9 +15,9 @@ public class Dolar extends Moeda {
 	@Override
 	public double converter(){
 		
-		valor = this.valor / 4.8;
+		double dolar = this.valor / 4.8;
 		
-		return valor;
+		return dolar;
 	}
 
 }

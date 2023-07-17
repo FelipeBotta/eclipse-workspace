@@ -1,5 +1,7 @@
 package trabalho;
 
+import java.util.Objects;
+
 public abstract class Moeda {
 	
 	public double valor;
@@ -20,14 +22,17 @@ public abstract class Moeda {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		return super.equals(obj);
-	}
+    public boolean equals(Object o) { //aqui converti o valor para objeto para que ele possa ser removido atraves do remove.
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Moeda moeda = (Moeda) o;
+        return valor == moeda.valor && Objects.equals(valor, moeda.valor);
+    }
 
-	@Override
-	public int hashCode() {
-		return super.hashCode();
-	}
+    @Override
+    public int hashCode() {
+        return Objects.hash(valor);
+    }
 	
 	
 	

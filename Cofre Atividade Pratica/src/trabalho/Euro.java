@@ -1,8 +1,7 @@
 package trabalho;
 
 public class Euro extends Moeda {
-	
-	
+
 	public Euro(double valor) {
 		super(valor);
 	}
@@ -20,5 +19,17 @@ public class Euro extends Moeda {
 		
 		return valor;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	}
+
+	@Override
+	public int hashCode() {
+		return super.hashCode();
+	}
+	
+	
 	
 }

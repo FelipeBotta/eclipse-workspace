@@ -18,7 +18,11 @@ public class Cofrinho {
 	
 	public void remover(Moeda moeda) {
 		
+		//listaMoeda.forEach((n) -> {if (moeda.valor == n.valor && moeda.info() == n.info())
+		//{listaMoeda.remove(n);}});
+		
 		listaMoeda.remove(moeda);
+		
 	}
 	
 	public void listagemMoedas() {

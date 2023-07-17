@@ -23,7 +23,7 @@ public class Cofrinho {
 	
 	public void listagemMoedas() {
 		
-		listaMoeda.forEach((n)-> {n.info(); System.out.println(n.valor);});
+		listaMoeda.forEach((n)-> {System.out.println(n.info() + " - " + String.format("%.2f", n.valor));});
 	
 }
 	public void totalConvertido(){
@@ -37,17 +37,17 @@ public class Cofrinho {
 				
 			} else if (n.info() == "Dolar") { 
 				 	
-				total =+ n.valor;
+				total =+ n.converter();
 				
 			}else if (n.info() == "Euro"){				
 				
-				total =+ n.valor;
+				total =+ n.converter();
 				
 			}
 			
 		});
 		
-		System.out.println("O total convertido em reais é de: " + total);
+		System.out.println("O total convertido em reais eh de: " + String.format("%.2f", total));
 		
 		
 	}

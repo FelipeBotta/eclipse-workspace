@@ -70,6 +70,7 @@ public class Principal {
 			
 		}
 			
+		}
 		
 		if (indice == 2){
 			
@@ -120,14 +121,14 @@ public class Principal {
 			System.out.println("Digite uma opção valida");
 		
 		}
-		 
-		 
-		 
-		 
 		}
 		
-			
-			
+		if (indice == 3) {
+			cofrinho.listagemMoedas();
+		}
+		
+		if (indice == 4) {
+			cofrinho.totalConvertido();
 		}
 		
 		if (indice == 0){
@@ -137,5 +138,4 @@ public class Principal {
 		
 		
 	}
-
 }
